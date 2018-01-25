@@ -73,6 +73,8 @@ class MainContent extends Component {
             </div>
           </div>
 
+          <Panel />
+
         </div>
 
 
