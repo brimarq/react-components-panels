@@ -1,3 +1,65 @@
 .sidebar {
-  background-color: lightgrey;
+
+}
+
+.sidebar .card {
+  color: white;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sidebar .card.stats .card-body .card-title {
+  margin-bottom: 0;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .card.stats .card-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sidebar .card.stats .card-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar .card.stats div.card-footer {
+  height: 60px;
+}
+
+.sidebar .card.weather {
+  background-color: #FD8A25;
+  text-align: center;
+  height: 150px;
+}
+
+.sidebar .card.weather .card-body .card-title {
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.sidebar .card.weather .card-body .card-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .card.new-visitors {
+  background-color: #1897CE;
+}
+
+.sidebar .card.bounce-rate {
+  background-color: #B18CD4;
+}
+
+.sidebar .card.searches {
+  background-color: #FC4A32;
+}
+
+.sidebar .card.traffic {
+  background-color: #66C05A;
+}
+
+.sidebar .card .card-footer {
+  height: 50px;
 }
