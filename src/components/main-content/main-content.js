@@ -73,7 +73,7 @@ class MainContent extends Component {
             </div>
           </div>
 
-          <Panel />
+          <Panel isTriFooter={true} footerTitle1={"15080"} footerText1={"Shot Views"} footerTitle2={"12000"} footerText2={"Likes"} footerTitle3={"5100"} footerText3={"Comments"}/>
 
         </div>
 
