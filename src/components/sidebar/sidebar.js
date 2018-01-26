@@ -5,44 +5,23 @@ import Panel from '../panel/panel';
 class Sidebar extends Component {
   render() {
     return (
+
       <div className="col-sm-3 sidebar">
-        <div className="card weather">
-          <div className="card-body">
-            <h5 className="card-title">18°</h5>
-            <p className="card-text"><small>Paris</small></p>
-          </div>
+
+        <div className="weather">
+          <Panel bodyTitle={"18°"} bodyText={"Paris"} />
         </div>
 
-        <div className="card stats new-visitors">
-          <div className="card-body">
-            <p className="card-title"><small>New visitors</small></p>
-            <p className="card-text">1.5k</p>
-          </div>
-          <div className="card-footer bg-light"></div>
-        </div>
+        <div className="stats">
+          {/*<Panel bodyTitle={"New Visitors"} bodyText={"1.5k"} hasFooter={true}/>
+          <Panel bodyTitle={"Bounce Rate"} bodyText={"50%"} hasFooter={true}/>
+          <Panel bodyTitle={"Searches"} bodyText={"28%"} hasFooter={true}/>
+          <Panel bodyTitle={"Traffic"} bodyText={"140.5 kb"} hasFooter={true}/>*/}
 
-        <div className="card stats bounce-rate">
-          <div className="card-body">
-            <p className="card-title"><small>Bounce Rate</small></p>
-            <p className="card-text">50%</p>
-          </div>
-          <div className="card-footer bg-light"></div>
-        </div>
-
-        <div className="card stats searches">
-          <div className="card-body">
-            <p className="card-title"><small>Searches</small></p>
-            <p className="card-text">28%</p>
-          </div>
-          <div className="card-footer bg-light"></div>
-        </div>
-
-        <div className="card stats traffic">
-          <div className="card-body">
-            <p className="card-title"><small>Traffic</small></p>
-            <p className="card-text">140.5 kb</p>
-          </div>
-          <div className="card-footer bg-light"></div>
+          <Panel hasHeader={true} headerTitle={"New Visitors"} headerText={"1.5k"}/>
+          <Panel hasHeader={true} headerTitle={"Bounce Rate"} headerText={"50%"}/>
+          <Panel hasHeader={true} headerTitle={"Searches"} headerText={"28%"}/>
+          <Panel hasHeader={true} headerTitle={"Traffic"} headerText={"140.5 kb"}/>
         </div>
 
       </div>

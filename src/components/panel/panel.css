@@ -1,0 +1,129 @@
+div.card {
+  border: none;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+  line-height: 1;
+}
+
+/*** MAIN-CONTENT CARDS ***/
+
+.main-content .card {
+  margin-bottom: 20px;
+}
+
+/* main-content card-deck cards */
+.main-content .card-deck .card .card-body {
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.main-content .card-deck .card .card-body .card-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.main-content .card-deck .card .card-body .card-text {
+  color: #868e96;
+  font-size: small;
+}
+
+/* main-content widecard cards */
+
+.main-content .widecards .card {
+  color: white;
+}
+.main-content .widecards .card .card-body {
+  height: 190px;
+}
+
+.main-content .widecards .card .card-footer .card-title {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.main-content .widecards .card .card-footer .row .col .card-title {
+  color: white;
+}
+
+.main-content .widecards .card .card-footer .row .col .card-text {
+  color: #868e96;
+  font-size: small;
+}
+
+.main-content .widecards .card:nth-child(1) {
+  background-color: #1897CE;
+}
+
+.main-content .widecards .card:nth-child(2) {
+  background-color: #CB5CAD;
+}
+
+/*** SIDEBAR CARDS ***/
+
+/* all sidebar cards */
+.sidebar .card {
+  color: white;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sidebar .stats .card .card-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sidebar .stats .card .card-body {
+  height: 55px;
+  background-color: white;
+}
+
+.sidebar .stats .card .card-header .card-title {
+  margin-bottom: 5px;
+  font-size: small;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .stats .card .card-header .card-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* sidebar weather card */
+.sidebar .weather .card {
+  background-color: #FD8A25;
+  text-align: center;
+  height: 140px;
+}
+
+.sidebar .weather .card .card-body .card-title {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.sidebar .weather .card .card-body .card-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: small;
+}
+
+/* sidebar new visitors card */
+.sidebar .stats .card:nth-child(1) {
+  background-color: #1897CE;
+}
+
+/* sidebar bounce rate card */
+.sidebar .stats .card:nth-child(2) {
+  background-color: #B18CD4;
+}
+
+/* sidebar searches card */
+.sidebar .stats .card:nth-child(3) {
+  background-color: #FC4A32;
+}
+
+/* sidebar traffic card */
+.sidebar .stats .card:nth-child(4) {
+  background-color: #66C05A;
+}

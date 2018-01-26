@@ -1,100 +1,71 @@
 import React, {Component} from 'react';
 import './panel.css';
 
-// function Footer(props) {
-//   const isTriFooter = props.isTriFooter;
-//   if (isTriFooter) {
-//     let footerTitle1 = this.footerTitle1;
-//     let footerText1 = this.footerText1;
-//     let footerTitle2 = this.footerTitle2;
-//     let footerText2 = this.footerText2;
-//     let footerTitle3 = this.footerTitle3;
-//     let footerText3 = this.footerText3;
-//     return (
-//       <div className="card-footer text-white bg-dark">
-//         <div className="row">
-//           <div className="col">
-//             <p className="card-title mb-0">{footerTitle1}</p>
-//             <p className="card-text"><small className="text-muted">{footerText1}</small></p>
-//           </div>
-//           <div className="col">
-//             <p className="card-title mb-0">{footerTitle2}</p>
-//             <p className="card-text"><small className="text-muted">{footerText2}</small></p>
-//           </div>
-//           <div className="col">
-//             <p className="card-title mb-0">{footerTitle3}</p>
-//             <p className="card-text"><small className="text-muted">{footerText3}</small></p>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-//   return (
-//     <div className="card-footer bg-dark single"></div>
-//   );
-// }
-
-class Footer extends Component {
+class Header extends Component {
   render() {
-    //const isTriFooter = this.props.isTriFooter;
-    if (this.props.isTriFooter) {
-      // let footerTitle1 = this.footerTitle1;
-      // let footerText1 = this.footerText1;
-      // let footerTitle2 = this.footerTitle2;
-      // let footerText2 = this.footerText2;
-      // let footerTitle3 = this.footerTitle3;
-      // let footerText3 = this.footerText3;
+    if (this.props.hasHeader) {
       return (
-        <div className="card-footer text-white bg-dark">
-          <div className="row">
-            <div className="col">
-              <p className="card-title mb-0">{this.props.footerTitle1}</p>
-              <p className="card-text"><small className="text-muted">{this.props.footerText1}</small></p>
-            </div>
-            <div className="col">
-              <p className="card-title mb-0">{this.props.footerTitle2}</p>
-              <p className="card-text"><small className="text-muted">{this.props.footerText2}</small></p>
-            </div>
-            <div className="col">
-              <p className="card-title mb-0">{this.props.footerTitle3}</p>
-              <p className="card-text"><small className="text-muted">{this.props.footerText3}</small></p>
-            </div>
-          </div>
+        <div className="card-header">
+          <p className="card-title">{this.props.headerTitle}</p>
+          <p className="card-text">{this.props.headerText}</p>
         </div>
       );
     }
+    return null;
+  }
+}
+
+class Body extends Component {
+  render() {
     return (
-      <div className="card-footer bg-dark single"></div>
+      <div className="card-body">
+        <p className="card-title">{this.props.bodyTitle}</p>
+        <p className="card-text">{this.props.bodyText}</p>
+      </div>
     );
+  }
+}
+
+class Footer extends Component {
+  render() {
+    if (this.props.hasFooter) {
+      if (this.props.isTriFooter) {
+        return (
+          <div className="card-footer bg-dark">
+            <div className="row">
+              <div className="col">
+                <p className="card-title">{this.props.triFooterTitle1}</p>
+                <p className="card-text">{this.props.triFooterText1}</p>
+              </div>
+              <div className="col">
+                <p className="card-title">{this.props.triFooterTitle2}</p>
+                <p className="card-text">{this.props.triFooterText2}</p>
+              </div>
+              <div className="col">
+                <p className="card-title">{this.props.triFooterTitle3}</p>
+                <p className="card-text">{this.props.triFooterText3}</p>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      return (
+        <div className="card-footer"></div>
+      );
+    }
+
+    return null;
   }
 }
 
 
 
 class Panel extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  // }
-
-
-
   render() {
-
-    // const isTriFooter = this.props.isTriFooter;
-    // const footerTitle1 = this.props.footerTitle1;
-    // const footerText1 = this.props.footerText1;
-    // const footerTitle2 = this.props.footerTitle2;
-    // const footerText2 = this.props.footerText2;
-    // const footerTitle3 = this.props.footerTitle3;
-    // const footerText3 = this.props.footerText3;
-
-
     return (
       <div className="card">
-        <div className="card-header"></div>
-        <div className="card-body">
-        </div>
+        <Header {...this.props}/>
+        <Body {...this.props}/>
         <Footer {...this.props}/>
       </div>
     );

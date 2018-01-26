@@ -8,76 +8,15 @@ class MainContent extends Component {
       <div className="col-sm-9 main-content">
 
         <div className="card-deck">
-
-          <div className="card text-left">
-            <div className="card-body">
-              <p className="card-title">20</p>
-              <p className="card-text"><small className="text-muted">New followers added this month</small></p>
-            </div>
-          </div>
-
-          <div className="card text-left">
-            <div className="card-body">
-              <p className="card-title">$1250</p>
-              <p className="card-text"><small className="text-muted">Average Monthly Income</small></p>
-            </div>
-          </div>
-
-          <div className="card text-left">
-            <div className="card-body">
-              <p className="card-title">$13865</p>
-              <p className="card-text"><small className="text-muted">Yearly Income Goal</small></p>
-            </div>
-          </div>
-
+          <Panel bodyTitle={"20"} bodyText={"New followers added this month"}/>
+          <Panel bodyTitle={"$1250"} bodyText={"Average Monthly Income"}/>
+          <Panel bodyTitle={"$13865"} bodyText={"Yearly Income Goal"}/>
         </div> {/* .card-deck */}
 
         <div className="widecards">
-          <div className="card text-center">
-            <div className="card-body"></div>
-            <div className="card-footer text-white bg-dark p-3">
-              <div className="row">
-                <div className="col">
-                  <p className="card-title mb-0">15080</p>
-                  <p className="card-text"><small className="text-muted">Shot Views</small></p>
-                </div>
-                <div className="col">
-                  <p className="card-title mb-0">12000</p>
-                  <p className="card-text"><small className="text-muted">Likes</small></p>
-                </div>
-                <div className="col">
-                  <p className="card-title mb-0">5100</p>
-                  <p className="card-text"><small className="text-muted">Comments</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="card text-center">
-            <div className="card-body"></div>
-            <div className="card-footer text-white bg-dark p-3">
-              <div className="row">
-                <div className="col">
-                  <p className="card-title mb-0">15080</p>
-                  <p className="card-text"><small className="text-muted">Shot Views</small></p>
-                </div>
-                <div className="col">
-                  <p className="card-title mb-0">12000</p>
-                  <p className="card-text"><small className="text-muted">Likes</small></p>
-                </div>
-                <div className="col">
-                  <p className="card-title mb-0">5100</p>
-                  <p className="card-text"><small className="text-muted">Comments</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <Panel isTriFooter={true} footerTitle1={"15080"} footerText1={"Shot Views"} footerTitle2={"12000"} footerText2={"Likes"} footerTitle3={"5100"} footerText3={"Comments"}/>
-
-        </div>
-
-
+          <Panel hasFooter={true} isTriFooter={true} triFooterTitle1={"15080"} triFooterText1={"Shot Views"} triFooterTitle2={"12000"} triFooterText2={"Likes"} triFooterTitle3={"5100"} triFooterText3={"Comments"}/>
+          <Panel hasFooter={true} isTriFooter={true} triFooterTitle1={"15080"} triFooterText1={"Shot Views"} triFooterTitle2={"12000"} triFooterText2={"Likes"} triFooterTitle3={"5100"} triFooterText3={"Comments"}/>
+        </div> {/* .widecards */}
 
       </div>
     );
